@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Watch live darshan from temples across India. Live streaming from holy places.">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' https://i.ytimg.com data:; frame-src https://www.youtube.com;">
+    <title>Live Darshan - Sudarshan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="Sudarshan_Logo.png" type="image/png">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="Sudarshan_Logo.png" alt="Sudarshan Logo" class="logo-img">
+                <div class="logo-text">
+                    <span class="logo-title">SUDARSHAN</span>
+                    <span class="logo-subtitle">LIVE DARSHAN | HOLY PLACES OF INDIA</span>
+                </div>
+            </a>
+            <nav class="nav">
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="live.html" class="nav-link active">Live</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Live Streams -->
+    <main>
+        <section class="live-section">
+            <div class="container">
+                <h1 class="page-title">Live Darshan</h1>
+                <p class="page-desc">Watch live streams from sacred temples and holy places across India.</p>
+
+                <div class="live-status" id="liveStatus">
+                    <span class="status-dot"></span>
+                    <span>Checking for live streams...</span>
+                </div>
+
+                <div class="streams-grid" id="streamsGrid">
+                    <!-- Streams will be populated by JavaScript -->
+                </div>
+
+                <div class="no-streams" id="noStreams" style="display:none;">
+                    <div class="no-streams-icon">&#128249;</div>
+                    <h3>No Live Streams Right Now</h3>
+                    <p>Check back later for live darshan. Streams are available during aarti and special puja timings.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="Sudarshan_Logo.png" alt="Sudarshan" class="footer-logo">
+                    <p>Bringing divine darshan to your screen. Experience the spiritual serenity of India's holy places from anywhere in the world.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="live.html">Live Darshan</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p>Have questions or suggestions?</p>
+                    <a href="contact.html">Get in Touch &rarr;</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sudarshan. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Ad Placeholders -->
+    <div class="ad-float ad-float-left" id="adLeft">
+        <button class="ad-close" id="adCloseLeft" aria-label="Close ad">&times;</button>
+        <div class="ad-content">
+            <p class="ad-label">Advertisement</p>
+            <div class="ad-placeholder">
+                <p>Ad Space</p>
+            </div>
+        </div>
+    </div>
+    <div class="ad-float ad-float-right" id="adRight">
+        <button class="ad-close" id="adCloseRight" aria-label="Close ad">&times;</button>
+        <div class="ad-content">
+            <p class="ad-label">Advertisement</p>
+            <div class="ad-placeholder">
+                <p>Ad Space</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/live.js"></script>
+</body>
+</html>

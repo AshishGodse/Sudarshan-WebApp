@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Sudarshan - Get in touch for queries about live darshan services.">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:;">
+    <title>Contact Us - Sudarshan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="Sudarshan_Logo.png" type="image/png">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="Sudarshan_Logo.png" alt="Sudarshan Logo" class="logo-img">
+                <div class="logo-text">
+                    <span class="logo-title">SUDARSHAN</span>
+                    <span class="logo-subtitle">LIVE DARSHAN | HOLY PLACES OF INDIA</span>
+                </div>
+            </a>
+            <nav class="nav">
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="live.html" class="nav-link">Live</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <main>
+        <section class="contact-section">
+            <div class="container">
+                <h1 class="page-title">Contact Us</h1>
+                <p class="page-desc">Have a question, suggestion, or want to add your temple's live stream? We'd love to hear from you.</p>
+
+                <div class="contact-wrapper">
+                    <div class="contact-form-container">
+                        <form class="contact-form" id="contactForm" action="#" method="POST" novalidate>
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" placeholder="Enter your name" required maxlength="100">
+                                <span class="form-error" id="nameError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" placeholder="Enter your email" required maxlength="200">
+                                <span class="form-error" id="emailError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="What's this about?" required maxlength="200">
+                                <span class="form-error" id="subjectError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Your message..." required maxlength="2000"></textarea>
+                                <span class="form-error" id="messageError"></span>
+                            </div>
+                            <button type="submit" class="submit-btn">Send Message</button>
+                            <div class="form-success" id="formSuccess" style="display:none;">
+                                <p>&#10004; Thank you! Your message has been sent successfully.</p>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="contact-info">
+                        <div class="info-card">
+                            <div class="info-icon">&#128231;</div>
+                            <h3>Email</h3>
+                            <p>contact@sudarshan.live</p>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon">&#127983;</div>
+                            <h3>Location</h3>
+                            <p>India</p>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon">&#9200;</div>
+                            <h3>Response Time</h3>
+                            <p>Within 24-48 hours</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="Sudarshan_Logo.png" alt="Sudarshan" class="footer-logo">
+                    <p>Bringing divine darshan to your screen. Experience the spiritual serenity of India's holy places from anywhere in the world.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="live.html">Live Darshan</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p>Have questions or suggestions?</p>
+                    <a href="contact.html">Get in Touch &rarr;</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sudarshan. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Ad Placeholders -->
+    <div class="ad-float ad-float-left" id="adLeft">
+        <button class="ad-close" id="adCloseLeft" aria-label="Close ad">&times;</button>
+        <div class="ad-content">
+            <p class="ad-label">Advertisement</p>
+            <div class="ad-placeholder">
+                <p>Ad Space</p>
+            </div>
+        </div>
+    </div>
+    <div class="ad-float ad-float-right" id="adRight">
+        <button class="ad-close" id="adCloseRight" aria-label="Close ad">&times;</button>
+        <div class="ad-content">
+            <p class="ad-label">Advertisement</p>
+            <div class="ad-placeholder">
+                <p>Ad Space</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

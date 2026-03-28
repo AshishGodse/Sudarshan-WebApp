@@ -1,0 +1,8 @@
+# Docker ignore
+.git
+.gitignore
+README.md
+DEPLOY.md
+*.md
+.vscode
+node_modules

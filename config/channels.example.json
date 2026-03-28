@@ -1,0 +1,35 @@
+{
+    "youtube_api_key": "YOUR_YOUTUBE_API_KEY_HERE",
+    "channels": [
+        {
+            "name": "Kashi Vishwanath Temple, Varanasi",
+            "channel_id": "CHANNEL_ID_HERE",
+            "description": "Live darshan from Kashi Vishwanath Temple"
+        },
+        {
+            "name": "Tirupati Balaji Temple",
+            "channel_id": "CHANNEL_ID_HERE",
+            "description": "Live darshan from Tirumala Tirupati"
+        },
+        {
+            "name": "Somnath Temple, Gujarat",
+            "channel_id": "CHANNEL_ID_HERE",
+            "description": "Live darshan from Somnath Jyotirlinga"
+        },
+        {
+            "name": "Jagannath Temple, Puri",
+            "channel_id": "CHANNEL_ID_HERE",
+            "description": "Live darshan from Jagannath Puri"
+        },
+        {
+            "name": "Siddhivinayak Temple, Mumbai",
+            "channel_id": "CHANNEL_ID_HERE",
+            "description": "Live darshan from Siddhivinayak"
+        },
+        {
+            "name": "Golden Temple, Amritsar",
+            "channel_id": "CHANNEL_ID_HERE",
+            "description": "Live darshan from Harmandir Sahib"
+        }
+    ]
+}
