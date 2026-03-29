@@ -82,18 +82,33 @@
 
         if (!isValid) return;
 
-        // Since this is a static site, show success message
-        // In production, you can integrate with a service like Formspree, Netlify Forms, or EmailJS
         var successEl = document.getElementById("formSuccess");
         var submitBtn = form.querySelector(".submit-btn");
 
         submitBtn.disabled = true;
         submitBtn.textContent = "Sending...";
 
-        // Simulate send delay
-        setTimeout(function () {
-            form.style.display = "none";
-            if (successEl) successEl.style.display = "block";
-        }, 800);
+        var formData = new FormData(form);
+
+        fetch(form.action, {
+            method: "POST",
+            body: formData,
+            headers: { Accept: "application/json" },
+        })
+            .then(function (response) {
+                if (response.ok) {
+                    form.style.display = "none";
+                    if (successEl) successEl.style.display = "block";
+                } else {
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = "Send Message";
+                    alert("Something went wrong. Please try again.");
+                }
+            })
+            .catch(function () {
+                submitBtn.disabled = false;
+                submitBtn.textContent = "Send Message";
+                alert("Network error. Please check your connection and try again.");
+            });
     });
 })();
