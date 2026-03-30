@@ -120,6 +120,27 @@
         });
     }
 
+    function getCachedStreams() {
+        var cached = localStorage.getItem("liveStreamsCache");
+        var timestamp = localStorage.getItem("liveStreamsCacheTime");
+        var now = Date.now();
+        var CACHE_DURATION = 5 * 60 * 1000; // 5 minutes
+
+        if (cached && timestamp && (now - parseInt(timestamp)) < CACHE_DURATION) {
+            return JSON.parse(cached);
+        }
+        return null;
+    }
+
+    function setCachedStreams(streams) {
+        try {
+            localStorage.setItem("liveStreamsCache", JSON.stringify(streams));
+            localStorage.setItem("liveStreamsCacheTime", Date.now().toString());
+        } catch (e) {
+            console.warn("Could not cache streams:", e.message);
+        }
+    }
+
     function fetchLiveStreams(config) {
         var apiKey = config.youtube_api_key;
         var channels = config.channels || [];
@@ -127,6 +148,14 @@
         if (!apiKey || apiKey === "YOUR_YOUTUBE_API_KEY_HERE") {
             updateStatus("YouTube API key not configured. Please update config/channels.json", false);
             displayFallbackCards(channels);
+            return;
+        }
+
+        // Check cache first
+        var cachedStreams = getCachedStreams();
+        if (cachedStreams) {
+            displayStreams(cachedStreams);
+            updateStatus("Showing cached streams (updated 5 min ago)", true);
             return;
         }
 
@@ -147,7 +176,7 @@
                 "&channelId=" + encodeURIComponent(channel.channel_id) +
                 "&eventType=live" +
                 "&type=video" +
-                "&maxResults=3" +
+                "&maxResults=1" +
                 "&key=" + encodeURIComponent(apiKey);
 
             fetch(url)
@@ -175,6 +204,9 @@
                 .finally(function () {
                     completed++;
                     if (completed === total) {
+                        if (allStreams.length > 0) {
+                            setCachedStreams(allStreams);
+                        }
                         displayStreams(allStreams);
                     }
                 });
