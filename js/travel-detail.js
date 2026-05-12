@@ -4,7 +4,7 @@ const templesData = {
     varanasi: {
         title: "Varanasi (Kashi)",
         location: "📍 Uttar Pradesh",
-        image: "https://via.placeholder.com/800x400/8B0000/FFFFFF?text=Varanasi",
+        image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 400'%3E%3Crect width='800' height='400' fill='%238B0000'/%3E%3Ctext x='400' y='200' font-size='48' text-anchor='middle' dominant-baseline='middle' font-family='Poppins, sans-serif' fill='white' font-weight='bold'%3EVaranasi (Kashi)%3C/text%3E%3Ctext x='400' y='260' font-size='32' text-anchor='middle' dominant-baseline='middle' font-family='Poppins, sans-serif' fill='%23FFD700'%3EHoliest Pilgrimage Site%3C/text%3E%3C/svg%3E",
         significance: "Varanasi is one of the oldest cities in the world and the holiest pilgrimage site in Hinduism. Located on the banks of the sacred Ganges River, it's believed that bathing in the river here washes away all sins. Varanasi is the city of Lord Shiva and holds immense spiritual significance.",
         attractions: [
             "Kashi Vishwanath Temple - One of the most sacred temples dedicated to Lord Shiva",
@@ -26,7 +26,7 @@ const templesData = {
     kedarnath: {
         title: "Kedarnath",
         location: "📍 Uttarakhand",
-        image: "https://via.placeholder.com/800x400/2F5233/FFFFFF?text=Kedarnath",
+        image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 400'%3E%3Crect width='800' height='400' fill='%232F5233'/%3E%3Ctext x='400' y='200' font-size='48' text-anchor='middle' dominant-baseline='middle' font-family='Poppins, sans-serif' fill='white' font-weight='bold'%3EKedarnath%3C/text%3E%3Ctext x='400' y='260' font-size='32' text-anchor='middle' dominant-baseline='middle' font-family='Poppins, sans-serif' fill='%23FFD700'%3ESacred Dham in Himalayas%3C/text%3E%3C/svg%3E",
         significance: "Kedarnath is one of the four sacred Dhams (pilgrimage sites) in Hinduism. It's home to the Kedarnath Temple, one of the oldest temples dedicated to Lord Shiva. The temple stands at an altitude of 3,583 meters in the Himalayan Mountains.",
         attractions: [
             "Kedarnath Temple - Ancient temple with stunning architecture",
@@ -48,7 +48,7 @@ const templesData = {
     tirupati: {
         title: "Tirupati",
         location: "📍 Andhra Pradesh",
-        image: "https://via.placeholder.com/800x400/1a472a/FFFFFF?text=Tirupati",
+        image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 400'%3E%3Crect width='800' height='400' fill='%231a472a'/%3E%3Ctext x='400' y='200' font-size='48' text-anchor='middle' dominant-baseline='middle' font-family='Poppins, sans-serif' fill='white' font-weight='bold'%3ETirupati Balaji%3C/text%3E%3Ctext x='400' y='260' font-size='32' text-anchor='middle' dominant-baseline='middle' font-family='Poppins, sans-serif' fill='%23FFD700'%3EMost Visited Temple%3C/text%3E%3C/svg%3E",
         significance: "Tirupati is one of the most visited temples in the world and one of the richest temples in terms of donations. The Tirupati Balaji Temple is dedicated to Lord Venkateshwara, an incarnation of Vishnu. It's a major pilgrimage site attracting millions of devotees annually.",
         attractions: [
             "Tirupati Balaji Temple - One of the richest temples with magnificent architecture",
@@ -70,7 +70,7 @@ const templesData = {
     mathura: {
         title: "Mathura & Vrindavan",
         location: "📍 Uttar Pradesh",
-        image: "https://via.placeholder.com/800x400/654321/FFFFFF?text=Mathura",
+        image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 400'%3E%3Crect width='800' height='400' fill='%23654321'/%3E%3Ctext x='400' y='200' font-size='48' text-anchor='middle' dominant-baseline='middle' font-family='Poppins, sans-serif' fill='white' font-weight='bold'%3EMathura %26 Vrindavan%3C/text%3E%3Ctext x='400' y='260' font-size='32' text-anchor='middle' dominant-baseline='middle' font-family='Poppins, sans-serif' fill='%23FFD700'%3EBirthplace of Krishna%3C/text%3E%3C/svg%3E",
         significance: "Mathura is the birthplace of Lord Krishna, one of the most revered deities in Hinduism. Vrindavan, nearby, is where Krishna spent his childhood and divine love with Radha. Both cities are central to Krishna devotion and contain numerous temples and sacred sites.",
         attractions: [
             "Krishna Janmabhoomi Temple - Built on Krishna's birthplace",
@@ -92,7 +92,7 @@ const templesData = {
     ayodhya: {
         title: "Ayodhya",
         location: "📍 Uttar Pradesh",
-        image: "https://via.placeholder.com/800x400/8B4513/FFFFFF?text=Ayodhya",
+        image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 400'%3E%3Crect width='800' height='400' fill='%238B4513'/%3E%3Ctext x='400' y='200' font-size='48' text-anchor='middle' dominant-baseline='middle' font-family='Poppins, sans-serif' fill='white' font-weight='bold'%3EAyodhya%3C/text%3E%3Ctext x='400' y='260' font-size='32' text-anchor='middle' dominant-baseline='middle' font-family='Poppins, sans-serif' fill='%23FFD700'%3EBirthplace of Lord Rama%3C/text%3E%3C/svg%3E",
         significance: "Ayodhya is the birthplace of Lord Rama, the seventh incarnation of Vishnu. It's one of the most sacred pilgrimage sites in Hinduism. The recently rebuilt Ram Mandir is one of the grandest temples in India.",
         attractions: [
             "Ram Mandir - Grand temple recently opened to public",
@@ -114,7 +114,7 @@ const templesData = {
     amarnath: {
         title: "Amarnath Cave",
         location: "📍 Jammu & Kashmir",
-        image: "https://via.placeholder.com/800x400/4A5899/FFFFFF?text=Amarnath",
+        image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 400'%3E%3Crect width='800' height='400' fill='%234A5899'/%3E%3Ctext x='400' y='200' font-size='48' text-anchor='middle' dominant-baseline='middle' font-family='Poppins, sans-serif' fill='white' font-weight='bold'%3EAmarnath Cave%3C/text%3E%3Ctext x='400' y='260' font-size='32' text-anchor='middle' dominant-baseline='middle' font-family='Poppins, sans-serif' fill='%23FFD700'%3EHoly Ice Lingam%3C/text%3E%3C/svg%3E",
         significance: "Amarnath is a sacred cave shrine dedicated to Lord Shiva. It's famous for the mysterious ice lingam that forms naturally inside the cave. The pilgrimage is considered one of the most sacred in Hinduism.",
         attractions: [
             "Holy ice Shivalingam - The main attraction, naturally formed from ice",
@@ -136,7 +136,7 @@ const templesData = {
     dwarka: {
         title: "Dwarka",
         location: "📍 Gujarat",
-        image: "https://via.placeholder.com/800x400/1a5f5f/FFFFFF?text=Dwarka",
+        image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 400'%3E%3Crect width='800' height='400' fill='%231a5f5f'/%3E%3Ctext x='400' y='200' font-size='48' text-anchor='middle' dominant-baseline='middle' font-family='Poppins, sans-serif' fill='white' font-weight='bold'%3EDwarka%3C/text%3E%3Ctext x='400' y='260' font-size='32' text-anchor='middle' dominant-baseline='middle' font-family='Poppins, sans-serif' fill='%23FFD700'%3EGateway to Liberation%3C/text%3E%3C/svg%3E",
         significance: "Dwarka is one of the four sacred Dhams. It's the ancient kingdom of Lord Krishna. The city is revered as the gateway to liberation (moksha). Dwarkadhish Temple is the main attraction.",
         attractions: [
             "Dwarkadhish Temple - Ancient temple dedicated to Krishna",
@@ -158,7 +158,7 @@ const templesData = {
     badrinath: {
         title: "Badrinath",
         location: "📍 Uttarakhand",
-        image: "https://via.placeholder.com/800x400/6b4423/FFFFFF?text=Badrinath",
+        image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 400'%3E%3Crect width='800' height='400' fill='%236b4423'/%3E%3Ctext x='400' y='200' font-size='48' text-anchor='middle' dominant-baseline='middle' font-family='Poppins, sans-serif' fill='white' font-weight='bold'%3EBadrinath%3C/text%3E%3Ctext x='400' y='260' font-size='32' text-anchor='middle' dominant-baseline='middle' font-family='Poppins, sans-serif' fill='%23FFD700'%3ETemplate of Lord Vishnu%3C/text%3E%3C/svg%3E",
         significance: "Badrinath is one of the four sacred Dhams. The temple is dedicated to Lord Vishnu and is located in the Himalayan mountains. It's one of the most important pilgrimage sites in Hinduism.",
         attractions: [
             "Stunning mountain scenery and Himalayan views",
@@ -180,7 +180,7 @@ const templesData = {
     meenakshi: {
         title: "Meenakshi Temple",
         location: "📍 Tamil Nadu",
-        image: "https://via.placeholder.com/800x400/9d4569/FFFFFF?text=Meenakshi",
+        image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 400'%3E%3Crect width='800' height='400' fill='%239d4569'/%3E%3Ctext x='400' y='200' font-size='48' text-anchor='middle' dominant-baseline='middle' font-family='Poppins, sans-serif' fill='white' font-weight='bold'%3EMeenakshi Temple%3C/text%3E%3Ctext x='400' y='260' font-size='32' text-anchor='middle' dominant-baseline='middle' font-family='Poppins, sans-serif' fill='%23FFD700'%3EArchitectural Marvel%3C/text%3E%3C/svg%3E",
         significance: "The Meenakshi Temple is one of the oldest and most magnificent temples in India. Dedicated to Goddess Meenakshi, it's an architectural marvel of South India with intricate carvings and sculptures.",
         attractions: [
             "Intricate temple architecture with detailed carvings",
@@ -202,7 +202,7 @@ const templesData = {
     rameswaram: {
         title: "Rameswaram",
         location: "📍 Tamil Nadu",
-        image: "https://via.placeholder.com/800x400/556B2F/FFFFFF?text=Rameswaram",
+        image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 400'%3E%3Crect width='800' height='400' fill='%23556B2F'/%3E%3Ctext x='400' y='200' font-size='48' text-anchor='middle' dominant-baseline='middle' font-family='Poppins, sans-serif' fill='white' font-weight='bold'%3ERameswaram%3C/text%3E%3Ctext x='400' y='260' font-size='32' text-anchor='middle' dominant-baseline='middle' font-family='Poppins, sans-serif' fill='%23FFD700'%3EHoliest Pilgrimage Site%3C/text%3E%3C/svg%3E",
         significance: "Rameswaram is one of the holiest Hindu pilgrimage sites. According to legend, this is where Lord Rama ended his exile and before embarking on a mission to rescue Sita from Sri Lanka.",
         attractions: [
             "Ramanathswamy Temple - Ancient temple with long corridors",
